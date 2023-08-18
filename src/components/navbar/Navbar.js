@@ -15,8 +15,10 @@ function Navbar() {
     <div className="navbar">
       <ul>
         <li className="logo">
-          <img src={Temple} alt="logo" />
-          <span>FireGroup</span>
+          <Link exact to="/">
+            <img src={Temple} alt="logo" />
+            <span>FireGroup</span>
+          </Link>
         </li>
 
         {!user && (
